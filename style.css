@@ -1,0 +1,44 @@
+* {
+    margin: 0 auto;
+}
+
+body {
+    background-color: gray;
+}
+
+#wrap {
+    width: 360px;
+    height: 640px;
+    background-color: white;
+    margin: 0 auto;
+    margin-top: 10px;
+}
+
+header {
+    height: 55px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    position: relative;
+    border-bottom: 4px solid #000000;
+    align-items: center;
+}
+
+header img {
+    width: 24px;
+    height: 24px;
+}
+
+.logo {position: relative;;top: -20%;
+    width: 117px;
+}
+
+header h1 {
+    font-size: 20px;
+    color: #DB1A0A
+}
+
+header .logo span {
+    font-size: 10px;
+    position: absolute;
+}
