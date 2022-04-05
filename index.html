@@ -1,37 +1,67 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;700&display=swap" rel="stylesheet">
 </head>
+
 <body>
     <div id="wrap">
-<header>
-    <!-- 첫번째 div 햄버거 버튼 -->
-    <div class="hambuger"><img src="images/menu.png" alt=""></div>
-    <!-- logo -->
-    <div class="logo">
-        <h1>News Trend</h1>
-        <span>AI 기반 뉴스 추천 서비스</span>
-    </div>
+        <header>
+            <div class="hambuger"><img src="images/menu.png" alt=""></div>
+            <div class="logo">
+                <h1>News Trend</h1>
+                <span>AI 기반 뉴스 추천 서비스</span>
+            </div>
+            <div class="search-menu"><img src="images/search.png" alt=""></div>
+        </header>
+        <div class="search-option">
+            <div class="hide">
+                <h4>인기검색어</h4>
 
-    <div class="search"><img src="images/search.png" alt=""></div>
-</header>
-<div class="search-option">
-    <div class="hide">
-        <h3>인기검색어</h3>
-        <table border="1">
-<tr>
-<td>대통령 <span>126만회</span></td>            
-<td>대통령 <span>126만회</span></td>            
-1</tr>        
-        </table>
-    </div>
-</div>
+                <ol class="list-wrap">
+                    <li>1.대통령</li>
+                    <li>2.우크라이나대통령</li>
+                    <li>3.러시아대통령</li>
+                    <li>4.북한위원장</li>
+                    <li>5.대통령</li>
+                    <li>6.우크라이나대통령</li>
+                    <li>7.러시아대통령</li>
+                    <li>8.북한위원장</li>
+                </ol>
+                <h4>최근검색어</h4>
+                <ul class="searched-list">
+                    <li>대통령</li>
+                    <li>우크라이나대통령</li>
+                    <li>러시아대통령</li>
+                    <li>북한위원장</li>
+                </ul>
+            </div>
+        </div>
+        <section>
+            <div class="menu">
+                <span>국내뉴스</span>
+                <span>유튜브</span></div>
+
+            <div class="news-image"><img
+                    src="https://images.chosun.com/resizer/gQLGphSf-Pow-gkuI2N0k0OB3iA=/616x0/filters:focal(1912x1241:1922x1251)/cloudfront-ap-northeast-1.images.arcpublishing.com/chosun/22YT5K3IY5JA7L2A2KC63AMANA.jpg"
+                    alt="">
+            </div>
+            <p class="news-ident">
+                <h3>[동서남북] 러시아 에너지 볼모 된 독일</h3>
+                <img src="images/josun.png" alt=""><span>12시간전</span>
+                <span class="news-time">2022.03.25:03:00</span>
+            </p>
+        </section>
 
     </div>
 </body>
+
 </html>
