@@ -58,17 +58,19 @@ h5 {
 
 body {
     position: relative;
+    /* width: 100%; */
 }
 
-/*
+
  .rulre0 {
-    width: 200px;
-    height: 129px;
+    width: 275px;
+    height: 20px;
     position: absolute;
     border: red solid 1px;
-    top: 60px;
-    right: 0; 
-}
+    top: 0;
+    right: 50%; 
+    transform: translate(50%, 0);
+}/*
 .rulre1 {
     width: 39px;
     height: 55px;
@@ -86,14 +88,17 @@ body {
     left: 10px;
 }  */
 
-body {
-    min-width: 280px;
-}
+
 
 /* 
 ------------------------------------------------------------------------------ */
+.hide{
+    display: none;
+    
+}
+
 header {
-    height: 15.6vW;
+    height: 15.6vw;
     border-bottom: solid 4px;
     display: flex;
     flex-flow: row wrap;
@@ -110,6 +115,27 @@ header .logo h5 {
 .hambuger img {
     width: 7.78vw;
     /*28px x 28px*/
+}
+
+.search-line {
+    display: flex;
+    flex-flow: row wrap;
+    width: 75%;
+    justify-content: space-between;
+}
+.search-line li:first-child {
+width: 72%;
+border-bottom: 1px solid ;
+text-align: start;
+color: #808080;
+}
+.search-line li:last-child {
+width: 23%;
+border: 1px solid #808080;
+text-align: start;
+border-radius: 1.5vw;
+text-align: center;
+color: #808080;
 }
 
 .search-menu img {
@@ -134,13 +160,14 @@ header .logo h5 {
     display: flex;
     flex-flow: column;
 }
+.wrap-search h3{
+    font-weight: bold;
+}
 
 .list-wrap {
     display: flex;
     flex-flow: column wrap;
     height: 28.9vw;
-    border: 1px solid red;
-    box-sizing: border-box;
 }
 
 .list-wrap li {
@@ -162,6 +189,7 @@ header .logo h5 {
 
 .list-wrap li span {
     color: gray;
+    font-size: 3.33334vw;;
 }
 
 .searched-list {
@@ -192,8 +220,12 @@ header .logo h5 {
     justify-content: space-around;
 }
 
-.menu li:first-child {
-    border-bottom: .2em #DB1A0A solid;
+.selcet-news li:first-child {
+    border-bottom: .9vw #DB1A0A solid;
+
+}
+.selcet-youtube li:last-child {
+    border-bottom: .9vw #DB1A0A solid;
 
 }
 
@@ -216,7 +248,7 @@ section {
 .recommend {
     display: flex;
     justify-content: space-between;
-    padding: 1.1vw 0 .5vw;
+    padding: 1.5vw 0 0 0  ;
 }
 
 .time-recommend {
@@ -228,6 +260,7 @@ section {
 .time-recommend li:first-child {
     padding: 0 .5em 0 0;
     border-right: 1px solid;
+    font-weight: bold;
 }
 
 .time-recommend li:last-child {
@@ -243,7 +276,7 @@ section {
     width: 100%;
     overflow: hidden;
     height: 39.3vw;
-    margin-bottom: .1em;
+    margin: .5em 0;
 }
 
 .news-image img {
@@ -281,7 +314,12 @@ section {
 
 .news-ident-name .news-time {
     margin-left: auto;
-
+}
+.news-ident-name .youtube-time {
+    margin-left: auto;
+    border: 1px solid red;
+    color: red;
+    display: block;
 }
 
 .news-ident-hash-tag {
